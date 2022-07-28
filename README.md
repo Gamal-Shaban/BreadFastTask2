@@ -43,6 +43,8 @@ Installation:
 
 `npx react-native run-ios` OR `npx react-native run-android`
 
+# Folder structure
+
 - `src`: This folder is the main container of all the code inside your application.
   - `components`: Folder to store any common component that you use through your app (such as a generic button)
   - `constants`: file to store any kind of constant that you have.
@@ -63,9 +65,10 @@ Installation:
     - store
     - storeInitialState
     
-   ## State Contaier
+## global state
       
-      I use redux toolkit it contain slices folder every slice you can make any api request and changge data in store from reduce in slice
+- I use redux toolkit it contain slices folder every slice you can make any api request and 
+      changge data in store from reduce in slice
       
 
 ## Screen Shots
@@ -82,9 +85,6 @@ Installation:
 |---|---|
 | ![Screenshot_1656774976](https://user-images.githubusercontent.com/17288652/177006393-ef20dfdd-0677-4446-83e7-4393a8d5c062.png) |![Simulator Screen Shot - iPhone 13 - 2022-07-02 at 17 16 10](https://user-images.githubusercontent.com/17288652/177006399-f349b267-c873-446b-9b5e-83e65f6c1e33.png)|
 
-## Folder structure
-
-This template follows a very simple project structure:
 
 
 
