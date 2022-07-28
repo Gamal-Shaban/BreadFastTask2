@@ -5,7 +5,7 @@ import {appLoaded} from './src/redux/slices/appStateSlice';
 import {StyleSheet, View} from 'react-native';
 import AppNavigation from './src/navigation';
 
-const seconds = 2500;
+const seconds = 2000;
 
 export const AppContainer = () => {
   const isMounted = useRef(false);
