@@ -9,6 +9,10 @@ const initialStates: initialStatesType = {
     postsData: [],
     selectedPost: null,
   },
+  comments: {
+    isLoading: true,
+    commentsData: [],
+  },
 };
 
 export default initialStates;

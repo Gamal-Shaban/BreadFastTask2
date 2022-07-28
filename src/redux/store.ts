@@ -1,11 +1,13 @@
 import {configureStore} from '@reduxjs/toolkit';
 import appStateReducer from './slices/appStateSlice';
 import postsReducer from './slices/postsSlice';
+import commentsReducer from './slices/commetsSlice';
 
 export const store = configureStore({
   reducer: {
     appState: appStateReducer,
     posts: postsReducer,
+    comments: commentsReducer,
   },
 });
 
