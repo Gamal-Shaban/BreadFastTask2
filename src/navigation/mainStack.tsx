@@ -8,20 +8,8 @@ const RootStack = createNativeStackNavigator();
 const MainStack = () => {
   return (
     <RootStack.Navigator>
-      <RootStack.Screen
-        name={'posts'}
-        options={{
-          headerShown: false,
-        }}
-        component={PostsScreen}
-      />
-      <RootStack.Screen
-        name={'postsDetails'}
-        options={{
-          headerShown: false,
-        }}
-        component={PostDetailsScreen}
-      />
+      <RootStack.Screen name={'posts'} component={PostsScreen} />
+      <RootStack.Screen name={'postsDetails'} component={PostDetailsScreen} />
     </RootStack.Navigator>
   );
 };
