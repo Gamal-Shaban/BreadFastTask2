@@ -1,10 +1,10 @@
 import {StyleSheet} from 'react-native';
-import {COLORS} from '../../utils/theme';
+import {COLORS} from '../../theme/theme';
 import {
   horizontalScale,
   normalizeFontSize,
   verticalScale,
-} from '../../utils/functions';
+} from '../../utils/responsiveUtils';
 
 export const styles = StyleSheet.create({
   container: {
