@@ -3,7 +3,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {useSelector} from 'react-redux';
 import MainStack from './mainStack';
 import {SafeAreaView, StyleSheet} from 'react-native';
-import {initialStatesType} from '../constants';
+import {initialStatesType} from '../types';
 import SplashScreenStack from './splashStack';
 
 const AppNavigation = () => {

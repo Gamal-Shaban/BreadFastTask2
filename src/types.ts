@@ -9,7 +9,10 @@ export interface initialStatesType {
   };
   comments: {
     isLoading: boolean;
-    commentsData: CommentType[];
+    commentsData: {
+      postId?: string;
+      comments?: CommentType[];
+    };
   };
 }
 
