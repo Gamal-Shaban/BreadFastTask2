@@ -33,14 +33,14 @@ export const postsSlice = createSlice({
     // Add reducers for additional action types here, and handle loading state as needed
     builder.addCase(fetchPosts.pending, state => {
       state.isLoading = true;
-    }),
-      builder.addCase(fetchPosts.fulfilled, (state, action) => {
-        state.isLoading = false;
-        state.postsData = action.payload;
-      }),
-      builder.addCase(fetchPosts.rejected, state => {
-        state.isLoading = false;
-      });
+    });
+    builder.addCase(fetchPosts.fulfilled, (state, action) => {
+      state.isLoading = false;
+      state.postsData = action.payload;
+    });
+    builder.addCase(fetchPosts.rejected, state => {
+      state.isLoading = false;
+    });
   },
 });
 
