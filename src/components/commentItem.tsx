@@ -1,23 +1,23 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-import {CommentType} from '../constants';
-import {COLORS} from '../utils/theme';
-import {normalizeFontSize, verticalScale} from '../utils/functions';
+import {CommentType} from '../types';
+import {COLORS} from '../theme/theme';
+import {normalizeFontSize, verticalScale} from '../utils/responsiveUtils';
 
 export const CommentItem = ({item}: {item: CommentType}) => {
   return (
     <View style={styles.container}>
       <Text style={styles.name}>
-        <Text style={styles.titleType}>name</Text>
-        {` : ${item?.name}`}
+        <Text style={styles.titleType}>name : </Text>
+        {item?.name}
       </Text>
       <Text style={[styles.name, styles.email]}>
-        <Text style={styles.titleType}>email</Text>
-        {` : ${item?.email}`}
+        <Text style={styles.titleType}>email : </Text>
+        {item?.email}
       </Text>
       <Text style={[styles.name, styles.email]}>
-        <Text style={styles.titleType}>comment</Text>
-        {` : ${item?.body}`}
+        <Text style={styles.titleType}>comment : </Text>
+        {item?.body}
       </Text>
     </View>
   );
