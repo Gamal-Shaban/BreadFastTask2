@@ -1,19 +1,12 @@
 import {createSlice} from '@reduxjs/toolkit';
-
-export interface AppStateState {
-  isLoaded: boolean;
-}
-
-const initialState: AppStateState = {
-  isLoaded: false,
-};
+import storeInitialState from '../storeInitialState';
 
 export const appStateSlice = createSlice({
   name: 'appState',
-  initialState,
+  initialState: storeInitialState.appState,
   reducers: {
     appLoaded: state => {
-      state.isLoaded = false;
+      state.isLoaded = true;
     },
   },
 });
