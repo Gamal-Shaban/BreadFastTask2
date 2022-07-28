@@ -1,6 +1,6 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {HomeScreen} from '../screens/home';
+import {HomeScreen} from '../screens/posts';
 
 const RootStack = createNativeStackNavigator();
 
@@ -8,7 +8,7 @@ const MainStack = () => {
   return (
     <RootStack.Navigator>
       <RootStack.Screen
-        name={'home'}
+        name={'posts'}
         options={{
           headerShown: false,
         }}

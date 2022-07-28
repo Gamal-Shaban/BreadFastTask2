@@ -1,9 +1,11 @@
 import {configureStore} from '@reduxjs/toolkit';
 import appStateReducer from './slices/appStateSlice';
+import postsReducer from './slices/postsSlice';
 
 export const store = configureStore({
   reducer: {
     appState: appStateReducer,
+    posts: postsReducer,
   },
 });
 
