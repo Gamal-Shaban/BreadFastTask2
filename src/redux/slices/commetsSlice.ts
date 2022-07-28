@@ -6,24 +6,29 @@ import {
 import axios from 'axios';
 import storeInitialState from '../storeInitialState';
 
-export const fetchComments = createAsyncThunk('comments', async () => {
-  try {
-    const response = await axios.get('https://gorest.co.in/public/v2/comments');
-    return response.data;
-  } catch (err: any) {
-    if (!err.response) {
-      throw err;
+export const fetchComments = createAsyncThunk(
+  'comments',
+  async (postId: number) => {
+    try {
+      const response = await axios.get(
+        `https://gorest.co.in//public/v2/posts/${postId}/comments`,
+      );
+      return {postId, comments: response.data};
+    } catch (err: any) {
+      if (!err.response) {
+        throw err;
+      }
+      return isRejectedWithValue(err.response.data);
     }
-    return isRejectedWithValue(err.response.data);
-  }
-});
+  },
+);
 
 export const commentsSlice = createSlice({
   name: 'comments',
   initialState: storeInitialState.comments,
   reducers: {
     resetComments: state => {
-      state.commentsData = [];
+      state.commentsData = {};
     },
   },
   extraReducers: builder => {

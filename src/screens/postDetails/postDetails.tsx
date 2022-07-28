@@ -4,23 +4,24 @@ import {useDispatch, useSelector} from 'react-redux';
 import {styles} from './styles';
 import {fetchComments} from '../../redux/slices/commetsSlice';
 import {AppDispatch} from '../../redux/store';
-import {CommentType, initialStatesType} from '../../constants';
-import {HeaderDetails} from '../../components/headerDetailsScreen';
+import {CommentType, initialStatesType} from '../../types';
 import {CommentItem} from '../../components/commentItem';
-import {IMAGES} from '../../utils/theme';
+import {IMAGES} from '../../theme/theme';
+import {useRoute} from '@react-navigation/native';
 
 export const PostDetailsScreen = () => {
   const {postDetails, commentsList} = useSelector(
     (state: initialStatesType) => ({
       postDetails: state.posts.selectedPost,
-      commentsList: state.comments.commentsData,
+      commentsList: state.comments.commentsData?.comments,
     }),
   );
+  const {postId} = useRoute().params;
 
   const dispatch = useDispatch<AppDispatch>();
 
   useEffect(() => {
-    dispatch(fetchComments());
+    dispatch(fetchComments(postId));
   }, [dispatch]);
 
   const ListHeaderComponent = () => {
@@ -43,7 +44,6 @@ export const PostDetailsScreen = () => {
 
   return (
     <View style={styles.container}>
-      <HeaderDetails />
       <FlatList
         renderItem={renderItem}
         data={commentsList}
