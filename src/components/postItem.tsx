@@ -8,16 +8,22 @@ import {
   normalizeFontSize,
   verticalScale,
 } from '../utils/functions';
+import {useNavigation} from '@react-navigation/native';
 
 export const PostItem = ({item}: any) => {
   const dispatch = useDispatch();
+  const {navigate} = useNavigation();
   const onPressItem = () => {
     dispatch(setSelectedPost(item));
+    navigate('postsDetails' as never);
   };
   return (
     <Pressable style={styles.item} onPress={onPressItem}>
       <View style={styles.avatarView}>
-        <Image source={IMAGES.avatar} style={styles.avatar} />
+        <View style={styles.imageContainer}>
+          <Image source={IMAGES.avatar} style={styles.avatar} />
+          <Text style={styles.userNameText}>User Name</Text>
+        </View>
         <Text style={styles.title} numberOfLines={3}>
           {item?.title}
         </Text>
@@ -59,5 +65,12 @@ const styles = StyleSheet.create({
   avatar: {
     height: verticalScale(80),
     width: verticalScale(80),
+  },
+  imageContainer: {
+    alignItems: 'center',
+  },
+  userNameText: {
+    fontSize: normalizeFontSize(15),
+    fontWeight: 'bold',
   },
 });
