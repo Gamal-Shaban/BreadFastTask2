@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should Renders Posts Screen and MatchSnapShot 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FFFFFF",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "alignSelf": "stretch",
+        "borderBottomColor": "#C9C9C9",
+        "borderBottomWidth": 0.8214285714285714,
+        "height": 73.92857142857143,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 28,
+          "fontWeight": "bold",
+          "textAlign": "center",
+        }
+      }
+    >
+      Posts
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "alignSelf": "stretch",
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <ActivityIndicator
+      size="large"
+    />
+  </View>
+</View>
+`;
+
+exports[`should Renders Splash and MatchSnapShot 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FFFFFF",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "alignSelf": "stretch",
+        "borderBottomColor": "#C9C9C9",
+        "borderBottomWidth": 0.8214285714285714,
+        "height": 73.92857142857143,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 28,
+          "fontWeight": "bold",
+          "textAlign": "center",
+        }
+      }
+    >
+      Posts
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "alignSelf": "stretch",
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <ActivityIndicator
+      size="large"
+    />
+  </View>
+</View>
+`;
