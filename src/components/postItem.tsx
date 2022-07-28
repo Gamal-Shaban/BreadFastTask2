@@ -1,24 +1,15 @@
 import React from 'react';
 import {Image, Pressable, StyleSheet, Text, View} from 'react-native';
-import {useDispatch} from 'react-redux';
-import {setSelectedPost} from '../redux/slices/postsSlice';
-import {COLORS, IMAGES} from '../utils/theme';
+import {COLORS, IMAGES} from '../theme/theme';
 import {
   horizontalScale,
   normalizeFontSize,
   verticalScale,
-} from '../utils/functions';
-import {useNavigation} from '@react-navigation/native';
+} from '../utils/responsiveUtils';
 
-export const PostItem = ({item}: any) => {
-  const dispatch = useDispatch();
-  const {navigate} = useNavigation();
-  const onPressItem = () => {
-    dispatch(setSelectedPost(item));
-    navigate('postsDetails' as never);
-  };
+export const PostItem = ({item, onPressItem}: any) => {
   return (
-    <Pressable style={styles.item} onPress={onPressItem}>
+    <Pressable style={styles.item} onPress={() => onPressItem(item)}>
       <View style={styles.avatarView}>
         <View style={styles.imageContainer}>
           <Image source={IMAGES.avatar} style={styles.avatar} />
