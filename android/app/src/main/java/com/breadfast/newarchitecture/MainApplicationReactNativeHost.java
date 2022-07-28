@@ -1,4 +1,4 @@
-package com.breadfast_task2.newarchitecture;
+package com.breadfast.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -19,9 +19,9 @@ import com.facebook.react.fabric.CoreComponentsRegistry;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.fabric.ReactNativeConfig;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import com.breadfast_task2.BuildConfig;
-import com.breadfast_task2.newarchitecture.components.MainComponentsRegistry;
-import com.breadfast_task2.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import com.breadfast.BuildConfig;
+import com.breadfast.newarchitecture.components.MainComponentsRegistry;
+import com.breadfast.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.breadfast_task2.newarchitecture.components;
+package com.breadfast.newarchitecture.components;
 
 import com.facebook.jni.HybridData;
 import com.facebook.proguard.annotations.DoNotStrip;

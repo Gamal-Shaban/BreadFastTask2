@@ -1,5 +1,5 @@
-package com.breadfast_task2;
-import android.os.Bundle;
+package com.breadfast;
+
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactRootView;
@@ -12,12 +12,7 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "breadfast_task2";
-  }
-
-  @Override
-  protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(null);
+    return "breadfast";
   }
 
   /**
