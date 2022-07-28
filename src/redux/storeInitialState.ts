@@ -1,4 +1,4 @@
-import {initialStatesType} from '../constants';
+import {initialStatesType} from '../types';
 
 const initialStates: initialStatesType = {
   appState: {
@@ -11,7 +11,7 @@ const initialStates: initialStatesType = {
   },
   comments: {
     isLoading: true,
-    commentsData: [],
+    commentsData: {},
   },
 };
 
