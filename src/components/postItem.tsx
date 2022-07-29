@@ -6,8 +6,15 @@ import {
   normalizeFontSize,
   verticalScale,
 } from '../utils/responsiveUtils';
+import {PostDetailsType} from '../types';
 
-export const PostItem = ({item, onPressItem}: any) => {
+export const PostItem = ({
+  item,
+  onPressItem,
+}: {
+  item: PostDetailsType;
+  onPressItem: (item: PostDetailsType) => void;
+}) => {
   return (
     <Pressable style={styles.item} onPress={() => onPressItem(item)}>
       <View style={styles.avatarView}>
