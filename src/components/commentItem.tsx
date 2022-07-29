@@ -1,16 +1,23 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {Image, StyleSheet, Text, View} from 'react-native';
 import {CommentType} from '../types';
-import {COLORS} from '../theme';
-import {normalizeFontSize, verticalScale} from '../utils/responsiveUtils';
+import {COLORS, IMAGES} from '../theme';
+import {
+  horizontalScale,
+  normalizeFontSize,
+  verticalScale,
+} from '../utils/responsiveUtils';
 
 export const CommentItem = ({item}: {item: CommentType}) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.name}>
-        <Text style={styles.titleType}>name : </Text>
-        {item?.name}
-      </Text>
+      <View style={styles.nameContainer}>
+        <Image source={IMAGES.avatar} style={styles.avatar} />
+        <Text style={styles.name}>
+          <Text style={styles.titleType}>name : </Text>
+          {item?.name}
+        </Text>
+      </View>
       <Text style={[styles.name, styles.email]}>
         <Text style={styles.titleType}>email : </Text>
         {item?.email}
@@ -43,5 +50,14 @@ const styles = StyleSheet.create({
   titleType: {
     fontSize: normalizeFontSize(18),
     color: '#01B8F0',
+  },
+  nameContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  avatar: {
+    height: verticalScale(60),
+    width: verticalScale(60),
+    marginRight: horizontalScale(10),
   },
 });
