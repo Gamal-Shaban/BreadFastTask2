@@ -8,9 +8,9 @@ export interface initialStatesType {
   };
   postDetails: {
     isLoading: boolean;
-    postDetailsData?: PostDetailsType | {};
+    postDetailsData?: PostDetailsType | null;
     commentsLoading: boolean;
-    commentsData?: CommentType[] | [];
+    commentsData?: CommentType[] | null;
   };
 }
 
@@ -27,4 +27,8 @@ export interface CommentType {
   name: string;
   email: string;
   body: string;
+}
+
+export interface PostDetailsRouteProp {
+  postId: string;
 }

@@ -46,7 +46,7 @@ export const postDetailsSlice = createSlice({
   reducers: {
     resetPostDetails: state => {
       console.log({state});
-      state.postDetailsData = {};
+      state.postDetailsData = null;
       state.commentsData = [];
     },
   },

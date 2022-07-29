@@ -22,7 +22,7 @@ export const PostDetailsScreen = () => {
       commentsList: state.postDetails.commentsData,
     }),
   );
-  const {postId} = useRoute().params;
+  const {postId} = useRoute<any>().params;
 
   const dispatch = useDispatch<AppDispatch>();
 
@@ -44,12 +44,11 @@ export const PostDetailsScreen = () => {
             <Text style={styles.postTitle}>{postDetails?.title}</Text>
           </View>
           <Text style={styles.postBody}>{postDetails?.body}</Text>
-          {commentsList?.length > 0 && (
-            <Text style={styles.commentsTitle}>Comments</Text>
-          )}
+          {commentsList && <Text style={styles.commentsTitle}>Comments</Text>}
         </View>
       );
     }
+    return <View />;
   };
   const renderItem = ({item}: {item: CommentType}) => {
     return <CommentItem item={item} />;
