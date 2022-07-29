@@ -1,6 +1,6 @@
 import React from 'react';
 import {Image, View} from 'react-native';
-import {IMAGES} from '../../theme/theme';
+import {IMAGES} from '../../theme';
 import {styles} from './styles';
 
 export const SplashScreen = () => {

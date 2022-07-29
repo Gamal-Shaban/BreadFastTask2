@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {CommentType} from '../types';
-import {COLORS} from '../theme/theme';
+import {COLORS} from '../theme';
 import {normalizeFontSize, verticalScale} from '../utils/responsiveUtils';
 
 export const CommentItem = ({item}: {item: CommentType}) => {

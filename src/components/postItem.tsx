@@ -1,6 +1,6 @@
 import React from 'react';
 import {Image, Pressable, StyleSheet, Text, View} from 'react-native';
-import {COLORS, IMAGES} from '../theme/theme';
+import {COLORS, IMAGES} from '../theme';
 import {
   horizontalScale,
   normalizeFontSize,
