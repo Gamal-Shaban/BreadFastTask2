@@ -56,12 +56,15 @@ Installation:
       - `Screen.test.js`
   - `test-utils`: Folder to store tests-related utilities and components.
   - `appCotainer.js`: Main component that starts your whole app.
+  - `theme`: Folder to store all the styling concerns related to the application theme.
+  - `utils`: folder contain responsiveUtils file.
+  - `types`: file contain all interface types in app
   - `index.js`: Entry point of your application as per React-Native standards.
   - `redux`: This folder contains .
     - slices: 
       - appStateSlice
       - postsSlice
-      - commentsSlice
+      - postDetailsSlice
     - store
     - storeInitialState
     
