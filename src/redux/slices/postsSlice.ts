@@ -21,14 +21,7 @@ export const fetchPosts = createAsyncThunk('posts', async () => {
 export const postsSlice = createSlice({
   name: 'posts',
   initialState: storeInitialState.posts,
-  reducers: {
-    setSelectedPost: (state, action) => {
-      state.selectedPost = action.payload;
-    },
-    resetSelectedPost: state => {
-      state.selectedPost = null;
-    },
-  },
+  reducers: {},
   extraReducers: builder => {
     // Add reducers for additional action types here, and handle loading state as needed
     builder.addCase(fetchPosts.pending, state => {
@@ -44,6 +37,6 @@ export const postsSlice = createSlice({
   },
 });
 
-export const {setSelectedPost, resetSelectedPost} = postsSlice.actions;
+export const {} = postsSlice.actions;
 
 export default postsSlice.reducer;

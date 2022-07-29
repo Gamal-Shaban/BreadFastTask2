@@ -4,7 +4,7 @@ import {useDispatch, useSelector} from 'react-redux';
 import {AppDispatch} from '../../redux/store';
 import {initialStatesType, PostDetailsType} from '../../types';
 import {PostItem} from '../../components/postItem';
-import {fetchPosts, setSelectedPost} from '../../redux/slices/postsSlice';
+import {fetchPosts} from '../../redux/slices/postsSlice';
 import {Loading} from '../../components/loading';
 import {styles} from './styles';
 import {useNavigation} from '@react-navigation/native';
@@ -25,7 +25,6 @@ export const PostsScreen = () => {
     return <PostItem item={item} onPressItem={onPressItem} />;
   };
   const onPressItem = (item: PostDetailsType) => {
-    dispatch(setSelectedPost(item));
     navigate(
       'postsDetails' as never,
       {

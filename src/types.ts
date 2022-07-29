@@ -5,14 +5,12 @@ export interface initialStatesType {
   posts: {
     isLoading: boolean;
     postsData: PostDetailsType[];
-    selectedPost: PostDetailsType | null;
   };
-  comments: {
+  postDetails: {
     isLoading: boolean;
-    commentsData: {
-      postId?: string;
-      comments?: CommentType[];
-    };
+    postDetailsData?: PostDetailsType | {};
+    commentsLoading: boolean;
+    commentsData?: CommentType[] | [];
   };
 }
 

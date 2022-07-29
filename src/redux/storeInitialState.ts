@@ -7,11 +7,12 @@ const initialStates: initialStatesType = {
   posts: {
     isLoading: true,
     postsData: [],
-    selectedPost: null,
   },
-  comments: {
+  postDetails: {
     isLoading: true,
-    commentsData: {},
+    postDetailsData: {},
+    commentsLoading: true,
+    commentsData: [],
   },
 };
 
