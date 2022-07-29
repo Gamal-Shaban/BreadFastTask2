@@ -76,17 +76,19 @@ Installation:
 
 ## Screen Shots
 
-| Android | IOS |
+| IOS | ADROID |
 |---|---|
-| ![Screenshot_1656776100](https://user-images.githubusercontent.com/17288652/177007040-05a5581c-e1dd-44e4-bbc0-2d1197db09ea.png) |![Simulator Screen Shot - iPhone 13 - 2022-07-02 at 17 34 39](https://user-images.githubusercontent.com/17288652/177007054-16a98839-d21c-49eb-b257-c94da0d858ac.png) |
+| ![Simulator Screen Shot - iPhone 13 - 2022-07-29 at 16 11 04](https://user-images.githubusercontent.com/17288652/181779322-b77a0a8e-9fae-430a-b12e-bb3b48726146.png) | ![Screenshot_1659104024](https://user-images.githubusercontent.com/17288652/181779215-50a0d678-aa5a-41a1-965d-1c66decc91fb.png)|
 
-| Android | IOS |
+| IOS | ADROID |
 |---|---|
-| ![Screenshot_1656776104](https://user-images.githubusercontent.com/17288652/177007076-146ed799-506d-4b48-9b71-493eff9adc09.png) | ![Simulator Screen Shot - iPhone 13 - 2022-07-02 at 17 34 43](https://user-images.githubusercontent.com/17288652/177007081-f360e4d3-4871-4659-b253-f097a51dc86a.png)|
+| ![Simulator Screen Shot - iPhone 13 - 2022-07-29 at 16 10 57](https://user-images.githubusercontent.com/17288652/181779402-cd165e3d-a42e-4640-bf63-590e53401a2b.png) |  ![Screenshot_1659104014](https://user-images.githubusercontent.com/17288652/181779466-ae5fd786-8937-4eed-b867-9884474d8ee3.png)|
 
-| Android | IOS |
+
+
+| IOS | ADROID |
 |---|---|
-| ![Screenshot_1656774976](https://user-images.githubusercontent.com/17288652/177006393-ef20dfdd-0677-4446-83e7-4393a8d5c062.png) |![Simulator Screen Shot - iPhone 13 - 2022-07-02 at 17 16 10](https://user-images.githubusercontent.com/17288652/177006399-f349b267-c873-446b-9b5e-83e65f6c1e33.png)|
+| ![Simulator Screen Shot - iPhone 13 - 2022-07-29 at 16 10 53](https://user-images.githubusercontent.com/17288652/181779583-3775b198-1ae3-4446-b2c1-f74afd948a85.png) | ![Screenshot_1659104011](https://user-images.githubusercontent.com/17288652/181779607-9e411aba-8cc7-4ea3-b10d-9ada93861923.png)|
 
 
 
